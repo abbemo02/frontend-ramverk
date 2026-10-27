@@ -1,28 +1,24 @@
-## Usage
+#Namn: Abdullahi Mohamed
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+## Om projektet
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+Det här är min inlämningsuppgift där jag har byggt en reaktiv katalogapplikation inspirerad av Crunchyroll. Appen är utvecklad i SolidJs med Vite och visar upp ett urval av populära anime- och mangatitlar tillsammans med en fungerande sökfunktion.
 
-## Available Scripts
+## Uppfyllda krav för Betyg G
 
-In the project directory, you can run:
+I projektet har jag implementerat följande delar från kravlistan:
 
-### `npm run dev`
+- **Komponenter**: Appen är uppdelad i återanvändbara komponenter (`App` och `Kort`).
+- **Databindning & Props**: Data skickas som `props` till `Kort`-komponenten och binds till sökfältets värde.
+- **Tillståndshantering (State)**: Använder `createSignal` från SolidJS för att reaktivt hantera söktillståndet.
+- **Eventhantering**: `onInput`-event uppdaterar sökningen dynamiskt i realtid när användaren skriver.
+- **Loop-rendering**: Använder SolidJS `<For>`-komponent för att rendera listan över kort.
+- **Villkorlig rendering**: Använder SolidJS `<Show>`-komponent för att visa meddelandet *"Inget hittades."* om sökningen inte ger några träffar.
+- **Styling**: Anpassad design med CSS-variabler och responsiv layout.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+---
 
-### `npm run build`
+## Hur man kör projektet lokalt
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-Learn more about deploying your application with the [documentations](https://vite.dev/guide/static-deploy.html)
+1. Klona repositoryt eller ladda ner projektfilerna.
+2. Öppna terminalen i projektmappen och installera "npm install"
